@@ -1,0 +1,224 @@
+.evolution {
+    background: url("../images/totalwar.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.evolutionBody {
+    width: 100%;
+    height: 85vh;
+    background: rgba(23,23,24,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.tankPic {
+    width: auto;
+    height: 40%;
+    max-width: 60%;
+    margin: 0 auto;
+    background: url('../images/loader/tiger.png') no-repeat center;
+    background-size: contain;
+    transition-duration: 1s;
+}
+
+/*  POWIEKSZANIE PO NAJECHANIU 
+.tankPic:hover {
+    height: 50%;
+}
+
+.tankPic:hover ~ .tankName {
+    height: 10%;
+}
+
+.tankPic:hover ~ .tankRightArrow {
+    top: 25%;
+}
+
+.tankPic:hover ~ .tankLeftArrow {
+    top: 25%;
+}
+*/
+
+.tankName {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1.3px;
+    color: rgba(218,165,32,1);
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.tankStats {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.tankStatsTabel {
+    width: 25%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-between;
+
+}
+
+.tabelElement {
+    width: 100%;
+    height: 22%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    box-shadow: inset 0 -6px 3px -3px rgba(218,165,32,1);
+}
+
+.tankLeftArrow {
+    background: url("../images/UI/arrLeft.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px; 
+    z-index: 999;
+    transition-duration: 1s;
+}
+
+.tankLeftArrow:hover {
+    background: url("../images/UI/arrLeftHov.png") no-repeat center;
+    background-size: cover;
+}
+
+.tankRightArrow {
+    background: url("../images/UI/arrRight.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px; 
+    z-index: 999;
+    transition-duration: 1s;
+}
+
+.tankRightArrow:hover {
+    background: url("../images/UI/arrRightHov.png") no-repeat center;
+    background-size: cover;
+}
+
+.jsonTankStat {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 1440px) {
+    
+    .tankName {
+        font-size: 50px;
+    }
+
+    .tabelElement {
+        font-size: 17px;
+    }
+    
+    .tankStatsTabel {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .tankName {
+        font-size: 45px;
+    } 
+
+    .tabelElement {
+        font-size: 13px;
+    }
+ 
+ }
+
+@media only screen and (max-width: 850px) {
+    .evolution {
+        height: 160vh;
+        background-image: none;
+        background: rgba(23,23,24,0.5);
+    }
+
+    .evolutionBody {
+        height: 145vh;
+        overflow: hidden;
+    }
+
+    .tankPic {
+        height: 30%;
+    }
+
+    /* POWIEKSZANIE PO NAJECHANIU 
+
+    .tankPic:hover {
+        height: 35%;
+    }
+
+    .tankPic:hover ~ .tankName {
+        height: 5%;
+    }
+    
+    .tankPic:hover ~ .tankRightArrow {
+        top: 20%;
+    }
+    
+    .tankPic:hover ~ .tankLeftArrow {
+        top: 20%;
+    }
+    
+    */
+
+    .tankLeftArrow {
+        top: 15%;
+    }
+
+    .tankRightArrow {
+        top: 15%;
+    }
+
+    .tankName {
+        height: 10%;
+    }
+
+    .tankStats {
+        height: 60%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tankStatsTabel {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        width: 75%;
+        height: 30%;
+    }
+
+    .tabelElement {
+        box-shadow: inset 0 -7px 3px -6px rgba(218,165,32,1);
+    }
+}

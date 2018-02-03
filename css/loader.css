@@ -1,0 +1,27 @@
+.loaderDiv {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    z-index: 999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaderTank {
+    width: 30vw;
+    height: 30vh;
+    background: url('../images/loader/tiger.png') no-repeat center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaded {
+    visibility: hidden;
+}

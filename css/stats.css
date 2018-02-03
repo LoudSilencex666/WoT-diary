@@ -1,0 +1,13 @@
+.stats {
+    background: url("../images/type.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.statsBody {
+    width: 100%;
+    height: 85vh;
+    background: rgba(23,23,24,0.5);
+}

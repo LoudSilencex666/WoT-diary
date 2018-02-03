@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sherman4511's diary</title>
+
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/establish.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/sectionHeaders.css">
+    <link rel="stylesheet" href="css/biography.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/evolution.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+
+</head>
+
+<body>
+    <header>
+        <img class="bigTitle" src="images/shermanTitle.png" alt="Spróbuj sobie wyobrazić">
+        <img class="wotLogo" src="images/logoWot.png" alt="Spróbuj sobie wyobrazić">
+    </header>
+    <div class="home">
+        <div class="mainElement scrollPoint">
+            <div class="mainText">
+                MY SHORT WOT BIOGRAPHY
+            </div>
+        </div>
+        <div class="mainElement scrollPoint">
+            <div class="mainText">
+                SCREENSHOTS GALLERY
+            </div>
+        </div>
+        <div class="mainElement scrollPoint">
+            <div class="mainText">
+                EVOLUTION OF MY FAVOURITE TANKS
+            </div>
+        </div>
+        <div class="mainElement scrollPoint">
+            <div class="mainText">
+                STATS PROGRESS
+            </div>
+        </div>
+        <div class="mainElement scrollPoint">
+            <div class="mainText">
+                MY YT/STREAM CONTENT
+            </div>
+        </div>
+    </div>
+
+    <video autoplay loop muted>
+        <source src="video/WoTIntro.mp4" type="video/mp4">
+    </video>
+
+    <div class="biography scrollDestination">
+        <div class="header">
+            <div class="headerText">
+                MY SHORT WOT BIOGRAPHY
+            </div>
+        </div>
+        <div class="bioBody">
+            <div class="bioLeft">
+                <div class="bioText">                    
+                    My real name is Damian and this is my World of Tanks biography. I'm playing WoT since 22.03.2012 and I love this game as much as I hate It.
+                    I heard about this game from television adviertising and decided to give it a try. WoT has changed a lot through these years just as me.
+                    I fall in love with quick combat and mostly intensive gameplay. Obviously my start with thos game wasn't the greatest and until today
+                    I'm raging because of SPG's and some special teammates but I never stop playing longer than a three-four months.
+                    The main reason I would someday throw this game away from my life is that WoT consumes a lot of time (seriously grinding every tank in the game with average skill takes like 10k hours). 
+                    In the moment of writing (the end of 2017) I'm focusing on getting 3rd marks and play very effective on high tier tanks.
+                    For example I achive to be first in EU on Strv S1 by official Wargaming global rating.
+                </div>
+            </div>
+            <div class="bioRight">
+                <div class="bioImgs">
+                    <div class="bioImg" id="bioImg1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery scrollDestination">
+        <div class="header">
+            <div class="headerText">
+                SCREENSHOTS GALLERY
+            </div>
+        </div>
+        <div class="galleryBody">
+            <div class="galleryPics">
+                <div class="clickedPicBg">
+
+                </div>
+                <div class="galleryPic" onmouseover="hoverZoom(this)" onmouseout="hoverZoomOut(this)" onclick="clickZoom(this)">
+                </div>
+                <div class="galleryPic" onmouseover="hoverZoom(this)"  onmouseout="hoverZoomOut(this)" onclick="clickZoom(this)">
+                </div>
+                <div class="galleryPic" onmouseover="hoverZoom(this)"  onmouseout="hoverZoomOut(this)" onclick="clickZoom(this)">
+                </div>
+            </div>
+            <div class="galleryUI">
+                <div class="galleryUIBtn firstSet">
+                </div>
+                <div class="galleryUIBtn beforeSet">
+                </div>
+                <div class="galleryUIBtn presentSet">
+                </div>
+                <div class="galleryUIBtn afterSet">
+                </div>
+                <div class="galleryUIBtn lastSet">
+                </div>
+            </div>
+            <div class="galleryPicExit" id="exitBtn" onclick="exitZoom()">
+                X
+            </div>
+        </div>
+    </div>
+
+    <div class="evolution scrollDestination">
+        <div class="header">
+            <div class="headerText">
+                EVOLUTION OF MY FAVOURITE TANKS
+            </div>
+        </div>
+        <div class="evolutionBody">
+            <div class="tankPic">
+
+            </div>
+            <div class="tankName">
+                JAGDPANTHER
+            </div>
+            <div class="tankStats">
+                <div class="tankStatsTabel">
+                    <div class="tabelElement">RELOAD TIME: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">ALPHA DAMAGE: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">AIMING TIME: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">DISPERSION AT 100M: <span class="jsonTankStat"> 0</span></div>
+                </div>
+                <div class="tankStatsTabel">
+                    <div class="tabelElement">DEPRESSION/ELEVATION: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">HIT POINTS: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">HULL ARMOR: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">TURRET ARMOR: <span class="jsonTankStat"> 0</span></div>
+                </div>          
+                <div class="tankStatsTabel">
+                    <div class="tabelElement">SPECIFIC POWER: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">TRAVERSE SPEED: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">CAMO: <span class="jsonTankStat"> 0</span></div>
+                    <div class="tabelElement">VIEW RANGE: <span class="jsonTankStat"> 0</span></div>
+                </div>
+            </div>
+            <div class="tankLeftArrow" onclick="leftArrowIteration()"></div>
+            <div class="tankRightArrow" onclick="rightArrowIteration()"></div>
+        </div>
+    </div>
+
+    <div class="stats scrollDestination">
+        <div class="header">
+            <div class="headerText">
+                STATS PROGRESS THROUGH TIME
+            </div>
+        </div>
+        <div class="statsBody">
+            
+        </div>
+    </div>
+
+    <div class="loaderDiv">
+        <div class="loaderTank">
+            Tanking...
+        </div>
+    </div>
+    <script src="js/loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/scrollTo.js"></script>
+    <script src="js/tanksDataReceiver.js"></script>
+</body>
+
+</html>

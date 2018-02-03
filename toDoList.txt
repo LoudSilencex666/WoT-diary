@@ -1,0 +1,7 @@
+Logo header : re-design.
+Menu home : kolorystyka/rozmiary.
+biography : zdjêcie/zdjêcia text.
+gallery : przwiñ na koniec, strza³ki w zoomie, efekt przewijania w zoomie, efekt ³adowania zdjêæ.
+
+
+Testowanie
